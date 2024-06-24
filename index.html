@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="div1">
+        <div class="button-container">
+            <button id="leftButton" class="choose-button active" onclick="leftclick()">QRcode Generator</button>
+            <button id="rightButton" class="choose-button inactive" onclick="rightclick()">Barcode Generator</button>
+        </div>
+        <h1 id="heading-1">QRcode Generator</h1>
+        <br>
+    <input class="input-c" id="in1" placeholder="Enter text or number">
+    <br><br>
+    <button class="generate-b" role="button" id="b1" onclick="we()">Generate</button>
+    <br><br>
+<div id="barcodeContainer">
+
+    <svg id="barcode"></svg>
+</div>
+    
+    <div id="placeHolder"></div>
+
+        
+    <div id="downloadButton">
+        <img id="downloadImg" src="download.png"  style="cursor:pointer; width: 40px; height: 40px;">
+    </div>
+
+    
+</div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js" integrity="sha512-k2wo/BkbloaRU7gc/RkCekHr4IOVe10kYxJ/Q8dRPl7u3YshAQmg3WfZtIcseEk+nGBdK03fHBeLgXTxRmWCLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" integrity="sha512-ZDSPMa/JM1D+7kdg2x3BsruQ6T/JpJo3jWDWkCZsP+5yVyp1KfESqLI+7RqB5k24F7p2cV7i2YHh/890y6P6Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

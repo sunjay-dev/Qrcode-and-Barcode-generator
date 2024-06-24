@@ -1,0 +1,135 @@
+body{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.div1{
+text-align: center;
+margin-top: 70px;
+}
+h1{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+}
+
+
+/* CSS */
+.generate-b {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.generate-b:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.generate-b:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.generate-b:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.input-c{
+padding: 7px;
+border-radius: 6px;
+font-size: 16px;
+background: #fbfbfb;
+border: 2px solid transparent;
+height: 36px;
+box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+width: 30vw;
+}
+
+.input-c:focus{
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+
+
+.button-container {
+  display: flex;
+}
+
+.choose-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  border: 2px solid transparent; /* Transparent border initially */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Added border-color transition */
+}
+
+.choose-button.active {
+  background-color: black;
+  color: white;
+  border-color: black; /* Border color when active */
+}
+
+.choose-button.inactive {
+  background-color: white;
+  color: black;
+  border-color: black; /* Border color when inactive */
+}
+
+#barcodeContainer {
+  width: 400px; /* Set a maximum width */
+  height: 140px; /* Set a maximum height */
+  overflow: hidden; /* Hide any overflow */
+  position: relative;
+}
+
+#barcode {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+#downloadButton{
+  position: relative;
+  right: -10vw;
+  bottom: 17.5vw;
+  pointer-events: none;
+}
+#downloadButton img{
+  pointer-events: auto;
+} 
+@media only screen and (max-width: 600px) {
+  .input-c{
+    width: 70vw;
+  }
+  #downloadButton{
+    position: relative;
+    right: -22vw;
+    bottom: 49vw;
+    }
+
+  }
