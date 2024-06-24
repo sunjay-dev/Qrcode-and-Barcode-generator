@@ -116,7 +116,7 @@ width: 30vw;
 #downloadButton{
   position: relative;
   right: -10vw;
-  bottom: 17.5vw;
+  bottom: 16vw;
   pointer-events: none;
 }
 #downloadButton img{
@@ -129,7 +129,7 @@ width: 30vw;
   #downloadButton{
     position: relative;
     right: -22vw;
-    bottom: 49vw;
+    bottom: 47vw;
     }
 
   }
